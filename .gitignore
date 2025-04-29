@@ -1,0 +1,14 @@
+# Node modules
+node_modules/
+package-lock.json
+
+# Build output
+dist/
+.angular/
+
+# IDE files
+.vscode/
+.idea/
+
+# Misc
+*.log
