@@ -27,6 +27,7 @@ const routes: Routes = [
 
 // Функция за зареждане на преводи
 export function HttpLoaderFactory(http: HttpClient) {
+  console.log('HttpLoaderFactory called'); // Дебъг
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }
 
@@ -47,4 +48,4 @@ bootstrapApplication(AppComponent, {
       }
     }).providers || []
   ]
-}).catch(err => console.error(err));
+}).catch(err => console.error('Bootstrap error:', err));
