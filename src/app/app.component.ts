@@ -29,6 +29,14 @@ export class AppComponent implements OnInit {
     // Използване на език от localStorage или подразбиране
     const savedLang = localStorage.getItem('language') || 'bg';
     translate.use(savedLang);
+    // Дебъг: Логиране на текущия език
+    console.log('Current language:', savedLang);
+    // Дебъг: Проверка дали преводите се зареждат
+    translate.get('sidebar.home').subscribe((res: string) => {
+      console.log('Translation for sidebar.home:', res);
+    }, (err: any) => {
+      console.error('Translation error:', err);
+    });
   }
 
   ngOnInit(): void {}
