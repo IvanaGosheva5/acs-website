@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-useful',
   standalone: true,
-  imports: [],
+  imports: [TranslateModule],
   templateUrl: './useful.component.html',
-  styleUrl: './useful.component.css'
+  styleUrls: ['./useful.component.css']
 })
-export class UsefulComponent {
-
-}
+export class UsefulComponent {}

@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-social',
   standalone: true,
-  imports: [],
+  imports: [TranslateModule],
   templateUrl: './social.component.html',
-  styleUrl: './social.component.css'
+  styleUrls: ['./social.component.css']
 })
-export class SocialComponent {
-
-}
+export class SocialComponent {}

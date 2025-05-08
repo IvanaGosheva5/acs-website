@@ -1,22 +1,69 @@
-nav {
-    background-color: #333;
-    padding: 10px;
-  }
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-  }
-  li {
-    margin: 0 15px;
-  }
-  a {
-    color: white;
-    text-decoration: none;
-    font-family: Arial, sans-serif;
-  }
-  a:hover {
-    color: #ddd;
-  }
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #003087; /* Тъмно син */
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.logo img {
+  height: 50px; /* Адаптирай според размера на логото */
+}
+
+.nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav li {
+  margin-left: 20px;
+}
+
+.nav a {
+  color: #f5f6f0; /* Мръсно бяло */
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.nav a:hover,
+.nav a.active {
+  color: #ffffff; /* Ярко бяло при ховер или активен */
+}
+
+.language-social {
+  display: flex;
+  align-items: center;
+}
+
+.language-icons,
+.social-icons {
+  display: flex;
+  align-items: center;
+}
+
+.language-icons a,
+.social-icons a {
+  margin-left: 10px;
+}
+
+.language-icons img,
+.social-icons img {
+  width: 24px;
+  height: 24px;
+  transition: opacity 0.3s;
+}
+
+.language-icons a:hover img,
+.social-icons a:hover img {
+  opacity: 0.7;
+}
+
+.main-content {
+  flex: 1;
+  background-color: #f5f6f0; /* Мръсно бял фон */
+  padding: 20px;
+}

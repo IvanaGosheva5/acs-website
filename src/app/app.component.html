@@ -1,12 +1,40 @@
-<nav>
-  <ul>
-    <li><a routerLink="/">Home</a></li>
-    <li><a routerLink="/about">About</a></li>
-    <li><a routerLink="/services">Services</a></li>
-    <li><a routerLink="/gallery">Gallery</a></li>
-    <li><a routerLink="/contact">Contact</a></li>
-    <li><a routerLink="/social">Social</a></li>
-    <li><a routerLink="/useful">Useful</a></li>
-  </ul>
-</nav>
-<router-outlet></router-outlet>
+<div class="container">
+  <!-- Header -->
+  <header class="header">
+    <!-- Logo -->
+    <div class="logo">
+      <a routerLink="/"><img src="assets/images/logo.png" alt="ACS Ltd." /></a>
+    </div>
+    <!-- Navigation -->
+    <nav class="nav">
+      <ul>
+        <li><a routerLink="/" routerLinkActive="active">{{ 'sidebar.home' | translate }}</a></li>
+        <li><a routerLink="/about" routerLinkActive="active">{{ 'sidebar.about' | translate }}</a></li>
+        <li><a routerLink="/services" routerLinkActive="active">{{ 'sidebar.services' | translate }}</a></li>
+        <li><a routerLink="/gallery" routerLinkActive="active">{{ 'sidebar.gallery' | translate }}</a></li>
+        <li><a routerLink="/contact" routerLinkActive="active">{{ 'sidebar.contact' | translate }}</a></li>
+        <li><a routerLink="/social" routerLinkActive="active">{{ 'sidebar.social' | translate }}</a></li>
+        <li><a routerLink="/useful" routerLinkActive="active">{{ 'sidebar.useful' | translate }}</a></li>
+      </ul>
+    </nav>
+    <!-- Language and Social Icons -->
+    <div class="language-social">
+      <!-- Language Icons -->
+      <div class="language-icons">
+        <a href="#" (click)="changeLanguage('bg'); $event.preventDefault()"><img src="assets/icons/bg.png" alt="Bulgarian" /></a>
+        <a href="#" (click)="changeLanguage('en'); $event.preventDefault()"><img src="assets/icons/en.png" alt="English" /></a>
+        <a href="#" (click)="changeLanguage('ru'); $event.preventDefault()"><img src="assets/icons/ru.png" alt="Russian" /></a>
+      </div>
+      <!-- Social Media Icons -->
+      <div class="social-icons">
+        <a href="https://www.facebook.com/yourpage" target="_blank"><img src="assets/icons/facebook.png" alt="Facebook" /></a>
+        <a href="https://www.instagram.com/yourpage" target="_blank"><img src="assets/icons/instagram.png" alt="Instagram" /></a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <router-outlet></router-outlet>
+  </main>
+</div>

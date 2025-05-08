@@ -1,0 +1,17 @@
+{
+  "sidebar": {
+    "title": "ACS Ltd.",
+    "home": "Home",
+    "about": "About Us",
+    "services": "Services",
+    "gallery": "Gallery",
+    "contact": "Contact",
+    "social": "Social Media",
+    "useful": "Useful",
+    "language": {
+      "bg": "Bulgarian",
+      "en": "English",
+      "ru": "Russian"
+    }
+  }
+}

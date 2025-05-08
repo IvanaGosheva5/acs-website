@@ -1,0 +1,31 @@
+.useful {
+    padding: 100px 20px;
+    text-align: center;
+    background-color: #F5F7FA; /* Светло синьо/сиво */
+  }
+  
+  h2 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: #003087; /* Тъмно синьо */
+  }
+  
+  p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #333333;
+    max-width: 900px;
+    margin: 0 auto;
+    line-height: 1.8;
+  }
+  
+  @media (max-width: 768px) {
+    h2 {
+      font-size: 32px;
+    }
+  
+    p {
+      font-size: 16px;
+    }
+  }
