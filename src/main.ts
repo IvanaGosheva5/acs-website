@@ -5,6 +5,7 @@ import { provideRouter, Routes } from '@angular/router';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient } from '@angular/common/http';
+import { provideAnimations } from '@angular/platform-browser/animations';
 import { HomeComponent } from './app/home/home.component';
 import { AboutComponent } from './app/about/about.component';
 import { ServicesComponent } from './app/services/services.component';
@@ -35,6 +36,7 @@ bootstrapApplication(AppComponent, {
   providers: [
     provideHttpClient(),
     provideRouter(routes),
+    provideAnimations(),
     {
       provide: TranslateLoader,
       useFactory: HttpLoaderFactory,
