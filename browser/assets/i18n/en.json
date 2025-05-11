@@ -1,0 +1,26 @@
+{
+  "sidebar": {
+    "title": "ACS Ltd",
+    "home": "Home",
+    "home_introduction": "Introduction",
+    "home_news": "News",
+    "about": "About Us",
+    "about_team": "Team",
+    "about_history": "History",
+    "services": "Services",
+    "services_consulting": "Consulting",
+    "services_support": "Support",
+    "gallery": "Gallery",
+    "gallery_projects": "Projects",
+    "gallery_events": "Events",
+    "contact": "Contact",
+    "contact_support": "Support",
+    "contact_feedback": "Feedback",
+    "social": "Social Media",
+    "social_facebook": "Facebook",
+    "social_instagram": "Instagram",
+    "useful": "Useful",
+    "useful_faq": "FAQ",
+    "useful_resources": "Resources"
+  }
+}
