@@ -1,22 +1,15 @@
-import { Component, AfterViewInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { TranslateModule } from '@ngx-translate/core';
-declare var $: any;
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [TranslateModule],
+  imports: [
+    CommonModule,
+    TranslateModule
+  ],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
-export class HomeComponent implements AfterViewInit {
-  ngAfterViewInit(): void {
-    $('.carousel').slick({
-      autoplay: true,
-      autoplaySpeed: 5000,
-      dots: true,
-      arrows: true,
-      fade: true
-    });
-  }
-}
+export class HomeComponent {}

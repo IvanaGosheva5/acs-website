@@ -1,69 +1,149 @@
-.header {
+* {
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+}
+
+.navbar {
+  width: 1200px;
+  height: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #003087; /* Тъмно син */
-  padding: 10px 20px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  background-color: #002B5B; /* Тъмно синьо, вдъхновено от Sopharma */
+  padding: 0 20px;
+  color: #E8ECEF; /* Мръсно бяло/сиво */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .logo img {
-  height: 50px; /* Адаптирай според размера на логото */
+  width: 100px;
+  height: 60px;
 }
 
-.nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+.nav-links {
   display: flex;
+  align-items: center;
+  width: 800px;
+  justify-content: space-between;
 }
 
-.nav li {
-  margin-left: 20px;
+.nav-links .dropdown {
+  position: relative;
+  width: 100px;
+  text-align: center;
 }
 
-.nav a {
-  color: #f5f6f0; /* Мръсно бяло */
+.nav-links .dropdown > a {
+  color: #E8ECEF;
   text-decoration: none;
   font-size: 16px;
+  padding: 10px;
+  display: block;
   transition: color 0.3s;
 }
 
-.nav a:hover,
-.nav a.active {
-  color: #ffffff; /* Ярко бяло при ховер или активен */
+.nav-links .dropdown > a:hover {
+  color: #B0C4DE;
 }
 
-.language-social {
+.nav-links .dropdown > a.active {
+  font-weight: bold;
+  border-bottom: 2px solid #E8ECEF;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: #002B5B;
+  width: 200px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #E8ECEF;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 14px;
+}
+
+.dropdown-content a:hover {
+  background-color: #004080;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.language-switcher {
+  width: 100px;
   display: flex;
-  align-items: center;
+  justify-content: space-between;
 }
 
-.language-icons,
-.social-icons {
-  display: flex;
-  align-items: center;
-}
-
-.language-icons a,
-.social-icons a {
-  margin-left: 10px;
-}
-
-.language-icons img,
-.social-icons img {
+.language-switcher img {
   width: 24px;
   height: 24px;
+  cursor: pointer;
   transition: opacity 0.3s;
 }
 
-.language-icons a:hover img,
-.social-icons a:hover img {
-  opacity: 0.7;
+.language-switcher img:hover {
+  opacity: 0.8;
 }
 
-.main-content {
-  flex: 1;
-  background-color: #f5f6f0; /* Мръсно бял фон */
+main {
+  width: 1200px;
+  min-height: 600px;
+  background-color: #E8ECEF;
   padding: 20px;
+}
+
+footer {
+  width: 1200px;
+  background-color: #002B5B;
+  color: #E8ECEF;
+  padding: 30px 20px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  width: 1160px;
+  padding-bottom: 20px;
+}
+
+.contact-info {
+  width: 580px;
+}
+
+.contact-info h3, .social-links h3 {
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.contact-info p {
+  margin: 8px 0;
+  font-size: 14px;
+}
+
+.social-links {
+  width: 580px;
+  text-align: right;
+}
+
+.social-links img {
+  width: 24px;
+  height: 24px;
+  margin: 0 10px;
+}
+
+.footer-bottom {
+  border-top: 1px solid #E8ECEF;
+  padding-top: 15px;
+  text-align: center;
+  font-size: 14px;
+  width: 1160px;
 }

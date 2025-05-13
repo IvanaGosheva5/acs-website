@@ -1,90 +1,92 @@
-<header>
-  <nav class="navbar">
-    <div class="logo">
-      <a routerLink="/">
-        <img src="/assets/images/logo.png" alt="ЕЙ СИ ЕС ЕООД" />
-      </a>
+<div class="container">
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <a routerLink="/">
+          <img src="/assets/images/logo.png" alt="ЕЙ СИ ЕС ЕООД" />
+        </a>
+      </div>
+      <div class="nav-links">
+        <div class="dropdown">
+          <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" translate>sidebar.home</a>
+          <div class="dropdown-content">
+            <a routerLink="/introduction" translate>sidebar.home_introduction</a>
+            <a routerLink="/news" translate>sidebar.home_news</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <a routerLink="/about" routerLinkActive="active" translate>sidebar.about</a>
+          <div class="dropdown-content">
+            <a routerLink="/about/team" translate>sidebar.about_team</a>
+            <a routerLink="/about/history" translate>sidebar.about_history</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <a routerLink="/services" routerLinkActive="active" translate>sidebar.services</a>
+          <div class="dropdown-content">
+            <a routerLink="/services/consulting" translate>sidebar.services_consulting</a>
+            <a routerLink="/services/support" translate>sidebar.services_support</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <a routerLink="/gallery" routerLinkActive="active" translate>sidebar.gallery</a>
+          <div class="dropdown-content">
+            <a routerLink="/gallery/projects" translate>sidebar.gallery_projects</a>
+            <a routerLink="/gallery/events" translate>sidebar.gallery_events</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <a routerLink="/contact" routerLinkActive="active" translate>sidebar.contact</a>
+          <div class="dropdown-content">
+            <a routerLink="/contact/support" translate>sidebar.contact_support</a>
+            <a routerLink="/contact/feedback" translate>sidebar.contact_feedback</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <a routerLink="/social" routerLinkActive="active" translate>sidebar.social</a>
+          <div class="dropdown-content">
+            <a href="https://facebook.com" target="_blank" translate>sidebar.social_facebook</a>
+            <a href="https://instagram.com" target="_blank" translate>sidebar.social_instagram</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <a routerLink="/useful" routerLinkActive="active" translate>sidebar.useful</a>
+          <div class="dropdown-content">
+            <a routerLink="/useful/faq" translate>sidebar.useful_faq</a>
+            <a routerLink="/useful/resources" translate>sidebar.useful_resources</a>
+          </div>
+        </div>
+      </div>
+      <div class="language-switcher">
+        <span (click)="changeLanguage('bg')" class="lang-button">BG</span>
+        <span (click)="changeLanguage('en')" class="lang-button">EN</span>
+        <span (click)="changeLanguage('ru')" class="lang-button">RU</span>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <router-outlet></router-outlet>
+  </main>
+  <footer>
+    <div class="footer-content">
+      <div class="contact-info">
+        <h3 translate>sidebar.contact</h3>
+        <p translate>footer.phone</p>
+        <p translate>footer.email</p>
+        <p translate>footer.address</p>
+      </div>
+      <div class="social-links">
+        <h3 translate>sidebar.social</h3>
+        <a href="https://facebook.com" target="_blank">
+          <img src="/assets/icons/facebook.png" alt="Facebook" />
+        </a>
+        <a href="https://instagram.com" target="_blank">
+          <img src="/assets/icons/instagram.png" alt="Instagram" />
+        </a>
+      </div>
     </div>
-    <div class="nav-links">
-      <div class="dropdown">
-        <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" translate>sidebar.home</a>
-        <div class="dropdown-content">
-          <a routerLink="/introduction" translate>sidebar.home_introduction</a>
-          <a routerLink="/news" translate>sidebar.home_news</a>
-        </div>
-      </div>
-      <div class="dropdown">
-        <a routerLink="/about" routerLinkActive="active" translate>sidebar.about</a>
-        <div class="dropdown-content">
-          <a routerLink="/about/team" translate>sidebar.about_team</a>
-          <a routerLink="/about/history" translate>sidebar.about_history</a>
-        </div>
-      </div>
-      <div class="dropdown">
-        <a routerLink="/services" routerLinkActive="active" translate>sidebar.services</a>
-        <div class="dropdown-content">
-          <a routerLink="/services/consulting" translate>sidebar.services_consulting</a>
-          <a routerLink="/services/support" translate>sidebar.services_support</a>
-        </div>
-      </div>
-      <div class="dropdown">
-        <a routerLink="/gallery" routerLinkActive="active" translate>sidebar.gallery</a>
-        <div class="dropdown-content">
-          <a routerLink="/gallery/projects" translate>sidebar.gallery_projects</a>
-          <a routerLink="/gallery/events" translate>sidebar.gallery_events</a>
-        </div>
-      </div>
-      <div class="dropdown">
-        <a routerLink="/contact" routerLinkActive="active" translate>sidebar.contact</a>
-        <div class="dropdown-content">
-          <a routerLink="/contact/support" translate>sidebar.contact_support</a>
-          <a routerLink="/contact/feedback" translate>sidebar.contact_feedback</a>
-        </div>
-      </div>
-      <div class="dropdown">
-        <a routerLink="/social" routerLinkActive="active" translate>sidebar.social</a>
-        <div class="dropdown-content">
-          <a href="https://facebook.com" target="_blank" translate>sidebar.social_facebook</a>
-          <a href="https://instagram.com" target="_blank" translate>sidebar.social_instagram</a>
-        </div>
-      </div>
-      <div class="dropdown">
-        <a routerLink="/useful" routerLinkActive="active" translate>sidebar.useful</a>
-        <div class="dropdown-content">
-          <a routerLink="/useful/faq" translate>sidebar.useful_faq</a>
-          <a routerLink="/useful/resources" translate>sidebar.useful_resources</a>
-        </div>
-      </div>
+    <div class="footer-bottom">
+      <p translate>footer.company</p>
     </div>
-    <div class="language-switcher">
-      <img src="/assets/icons/bg.png" alt="BG" (click)="changeLanguage('bg')" />
-      <img src="/assets/icons/en.png" alt="EN" (click)="changeLanguage('en')" />
-      <img src="/assets/icons/ru.png" alt="RU" (click)="changeLanguage('ru')" />
-    </div>
-  </nav>
-</header>
-<main>
-  <router-outlet></router-outlet>
-</main>
-<footer>
-  <div class="footer-content">
-    <div class="contact-info">
-      <h3 translate>sidebar.contact</h3>
-      <p translate>footer.phone</p>
-      <p translate>footer.email</p>
-      <p translate>footer.address</p>
-    </div>
-    <div class="social-links">
-      <h3 translate>sidebar.social</h3>
-      <a href="https://facebook.com" target="_blank">
-        <img src="/assets/icons/facebook.png" alt="Facebook" />
-      </a>
-      <a href="https://instagram.com" target="_blank">
-        <img src="/assets/icons/instagram.png" alt="Instagram" />
-      </a>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <p translate>footer.company</p>
-  </div>
-</footer>
+  </footer>
+</div>

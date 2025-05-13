@@ -2,16 +2,25 @@
   "sidebar": {
     "title": "ЕЙ СИ ЕС ЕООД",
     "home": "Начало",
+    "home_introduction": "Въведение",
+    "home_news": "Новини",
     "about": "За нас",
+    "about_team": "Екип",
+    "about_history": "История",
     "services": "Услуги",
+    "services_consulting": "Консултации",
+    "services_support": "Поддръжка",
     "gallery": "Галерия",
+    "gallery_projects": "Проекти",
+    "gallery_events": "Събития",
     "contact": "Контакти",
+    "contact_support": "Поддръжка",
+    "contact_feedback": "Обратна връзка",
     "social": "Социални мрежи",
+    "social_facebook": "Facebook",
+    "social_instagram": "Instagram",
     "useful": "Полезно",
-    "language": {
-      "bg": "Български",
-      "en": "Английски",
-      "ru": "Руски"
-    }
+    "useful_faq": "ЧЗВ",
+    "useful_resources": "Ресурси"
   }
 }
