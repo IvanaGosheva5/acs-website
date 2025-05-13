@@ -78,20 +78,25 @@
 }
 
 .language-switcher {
-  width: 100px;
+  width: 120px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
-.language-switcher img {
-  width: 24px;
-  height: 24px;
+.lang-button {
+  color: #E8ECEF;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 6px 12px;
   cursor: pointer;
-  transition: opacity 0.3s;
+  transition: background-color 0.3s, color 0.3s;
+  border-radius: 4px;
 }
 
-.language-switcher img:hover {
-  opacity: 0.8;
+.lang-button:hover {
+  background-color: #004080;
+  color: #B0C4DE;
 }
 
 main {
