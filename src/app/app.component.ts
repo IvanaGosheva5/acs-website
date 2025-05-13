@@ -18,6 +18,7 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
 })
 export class AppComponent implements OnInit {
   title = 'ЕЙ СИ ЕС ЕООД';
+  menuOpen = false;
 
   constructor(private translate: TranslateService) {
     translate.addLangs(['bg', 'en', 'ru']);
@@ -33,5 +34,9 @@ export class AppComponent implements OnInit {
     this.translate.use(lang);
     localStorage.setItem('language', lang);
     console.log(`Selected language: ${lang}`);
+  }
+
+  toggleMenu(): void {
+    this.menuOpen = !this.menuOpen;
   }
 }
