@@ -6,9 +6,18 @@ body {
   background-color: #E8ECEF; /* Мръсно бяло/сиво */
 }
 
-/* Фиксиран контейнер за целия сайт */
+/* Контейнер за целия сайт */
 .container {
-  width: 1200px;
+  max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
   background-color: #E8ECEF;
+}
+
+/* Адаптивни стилове за по-малки екрани */
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 0 10px;
+  }
 }
