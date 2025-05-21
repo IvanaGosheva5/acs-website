@@ -1,23 +1,33 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+/* Глобални стилове */
+:root {
+  --primary-color: #FFC107; /* Ярко жълто */
+  --secondary-color: #2E7D32; /* Тъмно зелено */
+  --text-color: #FFFFFF;
+  --background-color: #F5F5F5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
-  margin: 0;
-  font-family: 'Roboto', sans-serif;
-  background-color: #E8ECEF; /* Мръсно бяло/сиво */
+  font-family: Arial, sans-serif;
+  background: var(--background-color);
+  color: var(--secondary-color);
 }
 
-/* Контейнер за целия сайт */
-.container {
-  max-width: 1200px;
-  width: 100%;
-  margin: 0 auto;
-  background-color: #E8ECEF;
+/* Искрящ ефект за текст */
+.sparkle-text {
+  color: var(--primary-color) !important; /* Ярко жълто */
+  position: relative;
+  animation: sparkle 2s infinite;
+  text-shadow: 0 0 5px rgba(255, 193, 7, 0.8), 0 0 10px rgba(255, 193, 7, 0.6);
 }
 
-/* Адаптивни стилове за по-малки екрани */
-@media screen and (max-width: 768px) {
-  .container {
-    width: 100%;
-    padding: 0 10px;
-  }
+@keyframes sparkle {
+  0% { text-shadow: 0 0 5px rgba(255, 193, 7, 0.8), 0 0 10px rgba(255, 193, 7, 0.6); }
+  50% { text-shadow: 0 0 10px rgba(255, 193, 7, 1), 0 0 20px rgba(255, 193, 7, 0.8); }
+  100% { text-shadow: 0 0 5px rgba(255, 193, 7, 0.8), 0 0 10px rgba(255, 193, 7, 0.6); }
 }

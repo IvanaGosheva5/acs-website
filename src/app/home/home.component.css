@@ -1,65 +1,65 @@
 .slider-container {
-     position: relative;
-     max-width: 100%;
-     margin: 0 auto;
-     overflow: hidden;
-   }
+  position: relative;
+  max-width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  background: var(--secondary-color);
+}
 
-   .slider {
-     display: flex;
-     transition: transform 0.5s ease-in-out;
-   }
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
 
-   .slide {
-     flex: 0 0 100%;
-     display: none;
-   }
+.slide {
+  flex: 0 0 100%;
+  display: none;
+}
 
-   .slide.active {
-     display: block;
-   }
+.slide.active {
+  display: block;
+}
 
-   .slide-image {
-     width: 100%;
-     height: auto;
-     object-fit: cover;
-     max-height: 500px;
-   }
+.slide-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  max-height: 500px;
+}
 
-   .caption {
-     position: absolute;
-     bottom: 20px;
-     left: 50%;
-     transform: translateX(-50%);
-     color: #FFFFFF;
-     background: #2E7D32; /* Тъмно зелено */
-     padding: 10px 20px;
-     border-radius: 8px;
-     font-size: 18px;
-     text-align: center;
-     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-   }
+.caption {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--primary-color);
+  background: var(--secondary-color);
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 18px;
+  text-align: center;
+}
 
-   .dots {
-     text-align: center;
-     padding: 15px 0;
-   }
+.dots {
+  text-align: center;
+  padding: 15px 0;
+}
 
-   .dots span {
-     display: inline-block;
-     width: 15px;
-     height: 15px;
-     margin: 0 8px;
-     background: #333333;
-     border-radius: 50%;
-     cursor: pointer;
-     transition: background 0.3s ease;
-   }
+.dots span {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin: 0 8px;
+  background: #333333;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
 
-   .dots span.active {
-     background: #FFC107; /* Ярко жълто */
-   }
+.dots span.active {
+  background: var(--primary-color);
+}
 
-   .dots span:hover {
-     background: #2E7D32; /* Тъмно зелено */
-   }
+.dots span:hover {
+  background: var(--secondary-color);
+}

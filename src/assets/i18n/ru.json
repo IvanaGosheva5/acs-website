@@ -1,37 +1,22 @@
 {
-  "sidebar": {
-    "home": "Главная",
-    "home_introduction": "Введение",
-    "home_news": "Новости",
-    "about": "О нас",
-    "about_team": "Команда",
-    "about_history": "История",
-    "services": "Услуги",
-    "services_consulting": "Консультации",
-    "services_support": "Поддержка",
-    "gallery": "Галерея",
-    "gallery_projects": "Проекты",
-    "gallery_events": "События",
-    "contact": "Контакты",
-    "contact_support": "Поддержка",
-    "contact_feedback": "Обратная связь",
-    "social": "Социальные сети",
-    "social_facebook": "Facebook",
-    "social_instagram": "Instagram",
-    "useful": "Полезное",
-    "useful_faq": "ЧаВО",
-    "useful_resources": "Ресурсы"
-  },
-  "footer": {
-    "phone": "Телефон: +359 123 456 789",
-    "email": "Эл. почта: a_c_s@abv.bg",
-    "address": "Адрес: Благоевград, ул. Зелендолское шоссе",
-    "company": "© 2025 АСЭ ООО. Все права защищены."
-  },
-  "home": {
-    "title": "АСЭ ООО – Качество и инновации в оконных системах",
-    "subtitle": "Ваш партнер по алюминиевым и ПВХ окнам",
-    "description": "АСЭ ООО проектирует и производит высококачественные алюминиевые и ПВХ окна, фасадные конструкции и зимние сады в Благоевграде. Используя дизайнерские профили Reynaers из Бельгии и инновационные продукты, такие как перголы и безрамное остекление от Strgrup, мы предлагаем решения для каждого проекта. Наши специалисты и современная производственная база гарантируют надежность и точность.",
-    "cta": "Свяжитесь с нами"
-  }
-}
+     "sidebar": {
+       "home": "Главная",
+       "projects": "Проекты",
+       "services": "Услуги",
+       "services.pergolas": "Биоклиматические перголы",
+       "services.windows": "Окна",
+       "services.doors": "Двери",
+       "services.blinds": "Наружные роллеты и ламельные жалюзи",
+       "services.garage_doors": "Гаражные ворота",
+       "partnership": "Партнерство",
+       "partnership.franchise": "Франшиза",
+       "partnership.builders_architects": "Строители и архитекторы",
+       "contact": "Контакты",
+       "catalog": "Каталог и прайс-лист"
+     },
+     "footer": {
+       "contact": "Контакты",
+       "follow_us": "Следите за нами",
+       "copyright": "© 2025 ACS. Все права защищены."
+     }
+   }

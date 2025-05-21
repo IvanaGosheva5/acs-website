@@ -1,11 +1,11 @@
-.footer {
-     background: #2E7D32; /* Тъмно зелен фон */
-     color: #FFFFFF;
+:host footer.footer {
+     background: var(--secondary-color) !important; /* Тъмно зелено */
+     color: var(--text-color) !important;
      padding: 40px 20px;
      text-align: center;
    }
 
-   .footer-content {
+   :host .footer-content {
      display: flex;
      justify-content: space-around;
      flex-wrap: wrap;
@@ -14,55 +14,47 @@
      margin: 0 auto;
    }
 
-   .contact-info, .social-links {
+   :host .contact-info, :host .social-links {
      flex: 1;
      min-width: 200px;
    }
 
-   .contact-info h3, .social-links h3 {
+   :host .contact-info h3, :host .social-links h3 {
      font-size: 20px;
      margin-bottom: 15px;
-     color: #FFC107; /* Жълт акцент */
    }
 
-   .contact-info p, .social-links a {
+   :host .contact-info p, :host .social-links a {
      display: flex;
      align-items: center;
      gap: 10px;
-     color: #FFFFFF;
      text-decoration: none;
      font-size: 16px;
      margin: 10px 0;
-     transition: color 0.3s ease;
    }
 
-   .social-links a:hover {
-     color: #FFC107;
-   }
-
-   .footer-icon {
+   :host .footer-icon {
      width: 24px;
      height: 24px;
      transition: transform 0.3s ease;
    }
 
-   .social-links a:hover .footer-icon {
+   :host .social-links a:hover .footer-icon {
      transform: scale(1.2);
    }
 
-   .footer-bottom {
+   :host .footer-bottom {
      margin-top: 20px;
      border-top: 1px solid rgba(255, 255, 255, 0.2);
      padding-top: 10px;
    }
 
-   .footer-bottom p {
+   :host .footer-bottom p {
      font-size: 14px;
-     color: #FFFFFF;
    }
 
    @media screen and (max-width: 768px) {
-     .footer-content {
+     :host .footer-content {
        flex-direction: column;
        align-items: center;
      }

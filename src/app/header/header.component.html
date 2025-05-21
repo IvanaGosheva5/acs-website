@@ -1,38 +1,50 @@
 <header class="header">
-  <div class="header-left">
-    <img src="assets/logo.png" alt="ACS Logo" class="logo" />
-    <nav class="nav-menu" [class.active]="isMenuOpen">
-      <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleMenu()">
-        <img src="assets/icons/window.svg" class="nav-icon" alt="Home Icon" /> <span translate>sidebar.home</span>
-      </a>
-      <a routerLink="/about" routerLinkActive="active" (click)="toggleMenu()">
-        <img src="assets/icons/frame.svg" class="nav-icon" alt="About Icon" /> <span translate>sidebar.about</span>
-      </a>
-      <a routerLink="/services" routerLinkActive="active" (click)="toggleMenu()">
-        <img src="assets/icons/door.svg" class="nav-icon" alt="Services Icon" /> <span translate>sidebar.services</span>
-      </a>
-      <a routerLink="/gallery" routerLinkActive="active" (click)="toggleMenu()">
-        <img src="assets/icons/window.svg" class="nav-icon" alt="Gallery Icon" /> <span translate>sidebar.gallery</span>
-      </a>
-      <a routerLink="/contact" routerLinkActive="active" (click)="toggleMenu()">
-        <img src="assets/icons/frame.svg" class="nav-icon" alt="Contact Icon" /> <span translate>sidebar.contact</span>
-      </a>
-    </nav>
-    <div class="hamburger" (click)="toggleMenu()">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-  </div>
-  <div class="header-right">
-    <form class="search-form" (ngSubmit)="onSearch()">
-      <input type="text" [(ngModel)]="searchQuery" name="search" placeholder="{{ 'header.search' | translate }}" />
-      <button type="submit" class="search-button">
-        <img src="assets/icons/window.svg" class="search-icon" alt="Search Icon" /> <span translate>header.search_button</span>
-      </button>
-    </form>
-    <select class="language-select" [(ngModel)]="selectedLanguage" (ngModelChange)="changeLanguage($event)">
-      <option *ngFor="let lang of languages" [value]="lang">{{ lang.toUpperCase() }}</option>
-    </select>
-  </div>
-</header>
+     <div class="header-left">
+       <img src="assets/logo.png" alt="ACS Logo" class="logo" />
+       <nav class="nav-menu" [class.active]="isMenuOpen">
+         <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleMenu()">
+           <img src="assets/icons/home.svg" class="nav-icon" alt="Home Icon" /> <span class="sparkle-text" translate>sidebar.home</span>
+         </a>
+         <a routerLink="/projects" routerLinkActive="active" (click)="toggleMenu()">
+           <img src="assets/icons/projects.svg" class="nav-icon" alt="Projects Icon" /> <span class="sparkle-text" translate>sidebar.projects</span>
+         </a>
+         <div class="dropdown">
+           <a routerLink="/services" routerLinkActive="active" (click)="toggleMenu()">
+             <img src="assets/icons/services.svg" class="nav-icon" alt="Services Icon" /> <span class="sparkle-text" translate>sidebar.services</span>
+           </a>
+           <div class="dropdown-content">
+             <a routerLink="/services/pergolas" (click)="toggleMenu()" translate>sidebar.services.pergolas</a>
+             <a routerLink="/services/windows" (click)="toggleMenu()" translate>sidebar.services.windows</a>
+             <a routerLink="/services/doors" (click)="toggleMenu()" translate>sidebar.services.doors</a>
+             <a routerLink="/services/blinds" (click)="toggleMenu()" translate>sidebar.services.blinds</a>
+             <a routerLink="/services/garage-doors" (click)="toggleMenu()" translate>sidebar.services.garage_doors</a>
+           </div>
+         </div>
+         <div class="dropdown">
+           <a routerLink="/partnership" routerLinkActive="active" (click)="toggleMenu()">
+             <img src="assets/icons/partnership.svg" class="nav-icon" alt="Partnership Icon" /> <span class="sparkle-text" translate>sidebar.partnership</span>
+           </a>
+           <div class="dropdown-content">
+             <a routerLink="/partnership/franchise" (click)="toggleMenu()" translate>sidebar.partnership.franchise</a>
+             <a routerLink="/partnership/builders-architects" (click)="toggleMenu()" translate>sidebar.partnership.builders_architects</a>
+           </div>
+         </div>
+         <a routerLink="/contact" routerLinkActive="active" (click)="toggleMenu()">
+           <img src="assets/icons/contact.svg" class="nav-icon" alt="Contact Icon" /> <span class="sparkle-text" translate>sidebar.contact</span>
+         </a>
+         <a routerLink="/catalog" routerLinkActive="active" (click)="toggleMenu()">
+           <img src="assets/icons/catalog.svg" class="nav-icon" alt="Catalog Icon" /> <span class="sparkle-text" translate>sidebar.catalog</span>
+         </a>
+       </nav>
+       <div class="hamburger" (click)="toggleMenu()">
+         <span></span>
+         <span></span>
+         <span></span>
+       </div>
+     </div>
+     <div class="header-right">
+       <select class="language-select" [(ngModel)]="selectedLanguage" (ngModelChange)="changeLanguage($event)">
+         <option *ngFor="let lang of languages" [value]="lang">{{ lang.toUpperCase() }}</option>
+       </select>
+     </div>
+   </header>

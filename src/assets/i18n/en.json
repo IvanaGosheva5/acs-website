@@ -1,37 +1,22 @@
 {
-  "sidebar": {
-    "home": "Home",
-    "home_introduction": "Introduction",
-    "home_news": "News",
-    "about": "About Us",
-    "about_team": "Team",
-    "about_history": "History",
-    "services": "Services",
-    "services_consulting": "Consulting",
-    "services_support": "Support",
-    "gallery": "Gallery",
-    "gallery_projects": "Projects",
-    "gallery_events": "Events",
-    "contact": "Contact",
-    "contact_support": "Support",
-    "contact_feedback": "Feedback",
-    "social": "Social Media",
-    "social_facebook": "Facebook",
-    "social_instagram": "Instagram",
-    "useful": "Useful",
-    "useful_faq": "FAQ",
-    "useful_resources": "Resources"
-  },
-  "footer": {
-    "phone": "Phone: +359 123 456 789",
-    "email": "Email: a_c_s@abv.bg",
-    "address": "Address: Blagoevgrad, Zelendolsko Shose St.",
-    "company": "© 2025 ACS Ltd. All rights reserved."
-  },
-  "home": {
-    "title": "ACS Ltd. – Quality and Innovation in Window Systems",
-    "subtitle": "Your Partner for Aluminium and PVC Window Solutions",
-    "description": "ACS Ltd. designs and manufactures high-quality aluminium and PVC window systems, facade structures, and winter gardens in Blagoevgrad. Using designer Reynaers profiles from Belgium and innovative products like pergolas and frameless glazing from Strgrup, we deliver solutions for every project. Our experts and modern production facilities ensure reliability and precision.",
-    "cta": "Contact Us"
-  }
-}
+     "sidebar": {
+       "home": "Home",
+       "projects": "Projects",
+       "services": "Services",
+       "services.pergolas": "Bioclimatic Pergolas",
+       "services.windows": "Windows",
+       "services.doors": "Doors",
+       "services.blinds": "External Roller and Slatted Blinds",
+       "services.garage_doors": "Garage Doors",
+       "partnership": "Partnership",
+       "partnership.franchise": "Franchise",
+       "partnership.builders_architects": "Builders and Architects",
+       "contact": "Contact",
+       "catalog": "Catalog and Price Guide"
+     },
+     "footer": {
+       "contact": "Contact",
+       "follow_us": "Follow Us",
+       "copyright": "© 2025 ACS. All rights reserved."
+     }
+   }

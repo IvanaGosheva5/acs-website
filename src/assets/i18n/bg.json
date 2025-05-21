@@ -1,43 +1,22 @@
 {
-  "sidebar": {
-    "home": "Начало",
-    "home_introduction": "Въведение",
-    "home_news": "Новини",
-    "about": "За нас",
-    "about_team": "Екип",
-    "about_history": "История",
-    "services": "Услуги",
-    "services_consulting": "Консултации",
-    "services_support": "Поддръжка",
-    "gallery": "Галерия",
-    "gallery_projects": "Проекти",
-    "gallery_events": "Събития",
-    "contact": "Контакти",
-    "contact_support": "Поддръжка",
-    "contact_feedback": "Обратна връзка",
-    "social": "Социални мрежи",
-    "social_facebook": "Facebook",
-    "social_instagram": "Instagram",
-    "useful": "Полезно",
-    "useful_faq": "ЧЗВ",
-    "useful_resources": "Ресурси"
-  },
-  "footer": {
-    "phone": "Телефон: +359 123 456 789",
-    "email": "Имейл: a_c_s@abv.bg",
-    "address": "Адрес: Благоевград, ул. Зелендолско шосе",
-    "company": "© 2025 ЕЙ СИ ЕС ЕООД. Всички права запазени."
-  },
-  "home": {
-    "title": "ЕЙ СИ ЕС ЕООД – Качество и иновации в дограмата",
-    "subtitle": "Вашият партньор за алуминиева и PVC дограма",
-    "description": "„ЕЙ СИ ЕС ЕООД“ проектира и изработва висококачествена алуминиева и PVC дограма, фасадни конструкции и зимни градини в Благоевград. С дизайнерски профили Reynaers от Белгия и иновативни продукти като перголи и безпрофилно остъкляване от Strgrup, ние предлагаме решения за всеки проект. Нашите специалисти и модерна производствена база гарантират надеждност и прецизност.",
-    "cta": "Свържете се с нас",
-    "carousel": {
-      "aluminium": "Алуминиева дограма",
-      "pvc": "PVC дограма",
-      "pergolas": "Перголи и гилотини",
-      "winter_gardens": "Зимни градини"
-    }
-  }
-}
+     "sidebar": {
+       "home": "Начало",
+       "projects": "Обекти",
+       "services": "Услуги",
+       "services.pergolas": "Биоклиматични перголи",
+       "services.windows": "Прозорци",
+       "services.doors": "Врати",
+       "services.blinds": "Външни ролетни и ламелни щори",
+       "services.garage_doors": "Гаражни врати",
+       "partnership": "Партньорство",
+       "partnership.franchise": "Франчайз",
+       "partnership.builders_architects": "Строители и архитекти",
+       "contact": "Контакти",
+       "catalog": "Каталог и ценови справочник"
+     },
+     "footer": {
+       "contact": "Контакти",
+       "follow_us": "Последвайте ни",
+       "copyright": "© 2025 ACS. Всички права запазени."
+     }
+   }
