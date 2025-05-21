@@ -1,4 +1,13 @@
-<div class="home-content">
-  <h1 translate>sidebar.home</h1>
-  <p translate>sidebar.home_introduction</p>
-</div>
+<div class="slider-container" (mouseenter)="stopAutoSlide()" (mouseleave)="startAutoSlide()">
+     <div class="slider">
+       <div class="slide" *ngFor="let slide of slides; let i = index" [class.active]="i === currentSlide">
+         <img [src]="slide.image" [alt]="slide.caption | translate" class="slide-image" />
+         <div class="caption">{{ slide.caption | translate }}</div>
+       </div>
+     </div>
+     <div class="dots">
+       <span *ngFor="let slide of slides; let i = index"
+             [class.active]="i === currentSlide"
+             (click)="goToSlide(i)"></span>
+     </div>
+   </div>

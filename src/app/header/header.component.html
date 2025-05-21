@@ -1,0 +1,38 @@
+<header class="header">
+  <div class="header-left">
+    <img src="assets/logo.png" alt="ACS Logo" class="logo" />
+    <nav class="nav-menu" [class.active]="isMenuOpen">
+      <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleMenu()">
+        <img src="assets/icons/window.svg" class="nav-icon" alt="Home Icon" /> <span translate>sidebar.home</span>
+      </a>
+      <a routerLink="/about" routerLinkActive="active" (click)="toggleMenu()">
+        <img src="assets/icons/frame.svg" class="nav-icon" alt="About Icon" /> <span translate>sidebar.about</span>
+      </a>
+      <a routerLink="/services" routerLinkActive="active" (click)="toggleMenu()">
+        <img src="assets/icons/door.svg" class="nav-icon" alt="Services Icon" /> <span translate>sidebar.services</span>
+      </a>
+      <a routerLink="/gallery" routerLinkActive="active" (click)="toggleMenu()">
+        <img src="assets/icons/window.svg" class="nav-icon" alt="Gallery Icon" /> <span translate>sidebar.gallery</span>
+      </a>
+      <a routerLink="/contact" routerLinkActive="active" (click)="toggleMenu()">
+        <img src="assets/icons/frame.svg" class="nav-icon" alt="Contact Icon" /> <span translate>sidebar.contact</span>
+      </a>
+    </nav>
+    <div class="hamburger" (click)="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+  <div class="header-right">
+    <form class="search-form" (ngSubmit)="onSearch()">
+      <input type="text" [(ngModel)]="searchQuery" name="search" placeholder="{{ 'header.search' | translate }}" />
+      <button type="submit" class="search-button">
+        <img src="assets/icons/window.svg" class="search-icon" alt="Search Icon" /> <span translate>header.search_button</span>
+      </button>
+    </form>
+    <select class="language-select" [(ngModel)]="selectedLanguage" (ngModelChange)="changeLanguage($event)">
+      <option *ngFor="let lang of languages" [value]="lang">{{ lang.toUpperCase() }}</option>
+    </select>
+  </div>
+</header>
