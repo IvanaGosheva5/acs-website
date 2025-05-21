@@ -1,26 +1,22 @@
 {
-  "sidebar": {
-    "title": "ACS Ltd",
-    "home": "Home",
-    "home_introduction": "Introduction",
-    "home_news": "News",
-    "about": "About Us",
-    "about_team": "Team",
-    "about_history": "History",
-    "services": "Services",
-    "services_consulting": "Consulting",
-    "services_support": "Support",
-    "gallery": "Gallery",
-    "gallery_projects": "Projects",
-    "gallery_events": "Events",
-    "contact": "Contact",
-    "contact_support": "Support",
-    "contact_feedback": "Feedback",
-    "social": "Social Media",
-    "social_facebook": "Facebook",
-    "social_instagram": "Instagram",
-    "useful": "Useful",
-    "useful_faq": "FAQ",
-    "useful_resources": "Resources"
-  }
-}
+     "sidebar": {
+       "home": "Home",
+       "projects": "Projects",
+       "services": "Services",
+       "services.pergolas": "Bioclimatic Pergolas",
+       "services.windows": "Windows",
+       "services.doors": "Doors",
+       "services.blinds": "External Roller and Slatted Blinds",
+       "services.garage_doors": "Garage Doors",
+       "partnership": "Partnership",
+       "partnership.franchise": "Franchise",
+       "partnership.builders_architects": "Builders and Architects",
+       "contact": "Contact",
+       "catalog": "Catalog and Price Guide"
+     },
+     "footer": {
+       "contact": "Contact",
+       "follow_us": "Follow Us",
+       "copyright": "© 2025 ACS. All rights reserved."
+     }
+   }

@@ -1,26 +1,22 @@
 {
-  "sidebar": {
-    "title": "ЭЙ СИ ЭС ООО",
-    "home": "Главная",
-    "home_introduction": "Введение",
-    "home_news": "Новости",
-    "about": "О нас",
-    "about_team": "Команда",
-    "about_history": "История",
-    "services": "Услуги",
-    "services_consulting": "Консультации",
-    "services_support": "Поддержка",
-    "gallery": "Галерея",
-    "gallery_projects": "Проекты",
-    "gallery_events": "События",
-    "contact": "Контакты",
-    "contact_support": "Поддержка",
-    "contact_feedback": "Обратная связь",
-    "social": "Социальные сети",
-    "social_facebook": "Facebook",
-    "social_instagram": "Instagram",
-    "useful": "Полезное",
-    "useful_faq": "ЧаВО",
-    "useful_resources": "Ресурсы"
-  }
-}
+     "sidebar": {
+       "home": "Главная",
+       "projects": "Проекты",
+       "services": "Услуги",
+       "services.pergolas": "Биоклиматические перголы",
+       "services.windows": "Окна",
+       "services.doors": "Двери",
+       "services.blinds": "Наружные роллеты и ламельные жалюзи",
+       "services.garage_doors": "Гаражные ворота",
+       "partnership": "Партнерство",
+       "partnership.franchise": "Франшиза",
+       "partnership.builders_architects": "Строители и архитекторы",
+       "contact": "Контакты",
+       "catalog": "Каталог и прайс-лист"
+     },
+     "footer": {
+       "contact": "Контакты",
+       "follow_us": "Следите за нами",
+       "copyright": "© 2025 ACS. Все права защищены."
+     }
+   }

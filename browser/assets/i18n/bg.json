@@ -1,26 +1,22 @@
 {
-  "sidebar": {
-    "title": "ЕЙ СИ ЕС ЕООД",
-    "home": "Начало",
-    "home_introduction": "Въведение",
-    "home_news": "Новини",
-    "about": "За нас",
-    "about_team": "Екип",
-    "about_history": "История",
-    "services": "Услуги",
-    "services_consulting": "Консултации",
-    "services_support": "Поддръжка",
-    "gallery": "Галерия",
-    "gallery_projects": "Проекти",
-    "gallery_events": "Събития",
-    "contact": "Контакти",
-    "contact_support": "Поддръжка",
-    "contact_feedback": "Обратна връзка",
-    "social": "Социални мрежи",
-    "social_facebook": "Facebook",
-    "social_instagram": "Instagram",
-    "useful": "Полезно",
-    "useful_faq": "ЧЗВ",
-    "useful_resources": "Ресурси"
-  }
-}
+     "sidebar": {
+       "home": "Начало",
+       "projects": "Обекти",
+       "services": "Услуги",
+       "services.pergolas": "Биоклиматични перголи",
+       "services.windows": "Прозорци",
+       "services.doors": "Врати",
+       "services.blinds": "Външни ролетни и ламелни щори",
+       "services.garage_doors": "Гаражни врати",
+       "partnership": "Партньорство",
+       "partnership.franchise": "Франчайз",
+       "partnership.builders_architects": "Строители и архитекти",
+       "contact": "Контакти",
+       "catalog": "Каталог и ценови справочник"
+     },
+     "footer": {
+       "contact": "Контакти",
+       "follow_us": "Последвайте ни",
+       "copyright": "© 2025 ACS. Всички права запазени."
+     }
+   }
