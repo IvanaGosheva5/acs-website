@@ -1,0 +1,35 @@
+{
+  "common": {
+    "company": "ACS Ltd."
+  },
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "gallery": "Gallery",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "home": {
+    "title": "Welcome to ACS Ltd.",
+    "description": "Innovative aluminum, glass and designer Reynaers joinery solutions. Pergolas, cladding, glazing and custom projects."
+  },
+  "services": {
+    "title": "Our Services",
+    "service1": "Aluminum & automated pergolas (BIO, Rolling Roof)",
+    "service2": "Glazing – guillotine, sliding systems, double glazing",
+    "service3": "Claddings – HPL, Bond, Coverlaw",
+    "service4": "Joinery – Reynaers (aluminum) & PVC KBE",
+    "service5": "Canopies, railings, sliding gates"
+  },
+  "contact": {
+    "title": "Get in touch",
+    "person": "Contact person",
+    "phone": "Phone",
+    "email": "Email",
+    "instagram": "Instagram",
+    "facebook": "Facebook"
+  },
+  "footer": {
+    "rights": "All rights reserved."
+  }
+}

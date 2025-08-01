@@ -1,0 +1,35 @@
+{
+  "common": {
+    "company": "ACS GmbH"
+  },
+  "nav": {
+    "home": "Startseite",
+    "services": "Leistungen",
+    "gallery": "Galerie",
+    "about": "Über uns",
+    "contact": "Kontakt"
+  },
+  "home": {
+    "title": "Willkommen bei ACS GmbH",
+    "description": "Innovative Lösungen aus Aluminium, Glas und Designer-Fenstersysteme von Reynaers. Pergolen, Verkleidungen, Verglasung und Sonderprojekte."
+  },
+  "services": {
+    "title": "Unsere Leistungen",
+    "service1": "Aluminium- & automatisierte Pergolen (BIO, Rolling Roof)",
+    "service2": "Verglasung – Guillotinen, Schiebesysteme, Isolierglas",
+    "service3": "Verkleidungen – HPL, Bond, Coverlaw",
+    "service4": "Fenstersysteme – Reynaers (Alu) & PVC KBE",
+    "service5": "Vordächer, Geländer, Schiebetore"
+  },
+  "contact": {
+    "title": "Kontaktieren Sie uns",
+    "person": "Ansprechpartner",
+    "phone": "Telefon",
+    "email": "E-Mail",
+    "instagram": "Instagram",
+    "facebook": "Facebook"
+  },
+  "footer": {
+    "rights": "Alle Rechte vorbehalten."
+  }
+}
