@@ -1,30 +1,52 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import Header from "./components/Header";
-import Hero from "./components/Hero";
-import Home from "./components/Home";
-import Services from "./components/Services";
-import Gallery from "./components/Gallery";
-import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import ScrollToTop from "./components/ScrollToTop";
-import About from "./components/About";
+import Preloader from "./components/Preloader";
+import LanguageSwitcher from "./components/LanguageSwitcher";
+import ScrollToTopFloating from "./components/ScrollToTop";
 
+// Pages
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Products from "./pages/Products";
+import Services from "./pages/Services";
+import Gallery from "./pages/Gallery";
+import Contact from "./pages/Contact";
+import NotFound from "./pages/NotFound";
+import Partners from "./pages/Partners";
+
+
+// Скрол най-горе при смяна на страница
+const ScrollToTopOnRoute = () => {
+  const { pathname } = useLocation();
+  useEffect(() => { window.scrollTo(0, 0); }, [pathname]);
+  return null;
+};
 
 function App() {
   return (
-    <div className="App">
+    <Router>
+      <ScrollToTopOnRoute />
+      <Preloader />
       <Header />
-      <Hero />
-      <About />
-      <main>
-        <Home />
-        <Services />
-        <Gallery />
-        <Contact />
+      <main className="pt-20"> {/* отстояние за fixed Header */}
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/products" element={<Products />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<NotFound />} />
+          <Route path="/partners" element={<Partners />} />
+
+        </Routes>
       </main>
       <Footer />
-      <ScrollToTop />
-    </div>
+      <ScrollToTopFloating />
+      
+    </Router>
   );
 }
 
