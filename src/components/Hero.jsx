@@ -19,6 +19,7 @@ const Hero = () => {
           href="#contact"
           className="bg-yellow-400 text-green-900 px-6 py-3 rounded-lg shadow hover:bg-yellow-300"
         >
+            <a href="/contact" className="bg-yellow-400 text-green-900 px-6 py-3 rounded-lg shadow hover:bg-yellow-300"></a>
           Свържете се с нас
         </a>
       </div>
