@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import LanguageSwitcher from "./LanguageSwitcher";
 
+
 const Header = () => {
   const [open, setOpen] = useState(false);
   const { pathname } = useLocation();
@@ -38,12 +39,12 @@ const Header = () => {
           {/* ===== Десктоп навигация ===== */}
           <nav className="hidden lg:flex items-center gap-1">
             <NavLink end to="/" className={({isActive}) => `${linkBase} ${isActive ? linkActive : linkIdle}`}>Начало</NavLink>
-            <NavLink to="/about" className={({isActive}) => `${linkBase} ${isActive ? linkActive : linkIdle}`}>За нас</NavLink>
-            <NavLink to="/products" className={({isActive}) => `${linkBase} ${isActive ? linkActive : linkIdle}`}>Продукти</NavLink>
             <NavLink to="/services" className={({isActive}) => `${linkBase} ${isActive ? linkActive : linkIdle}`}>Услуги</NavLink>
             <NavLink to="/gallery" className={({isActive}) => `${linkBase} ${isActive ? linkActive : linkIdle}`}>Галерия</NavLink>
             <NavLink to="/contact" className={({isActive}) => `${linkBase} ${isActive ? linkActive : linkIdle}`}>Контакти</NavLink>
-          <NavLink to="/partners" className={({isActive}) => `${linkBase} ${isActive ? linkActive : linkIdle}`}>Партньори</NavLink>
+            <NavLink to="/partners" className={({isActive}) => `${linkBase} ${isActive ? linkActive : linkIdle}`}>Партньори</NavLink>
+           <NavLink to="/colors" className={({isActive}) => `${linkBase} ${isActive ? linkActive : linkIdle}`}>Цветове</NavLink>
+
 
           </nav>
 
@@ -84,8 +85,6 @@ const Header = () => {
           <div className="lg:hidden pb-4">
             <nav className="grid gap-1 bg-green-900 rounded-2xl p-3 border border-white/10">
               <NavLink end to="/" className="px-3 py-2 rounded-lg text-white hover:bg-white/10">Начало</NavLink>
-              <NavLink to="/about" className="px-3 py-2 rounded-lg text-white hover:bg-white/10">За нас</NavLink>
-              <NavLink to="/products" className="px-3 py-2 rounded-lg text-white hover:bg-white/10">Продукти</NavLink>
               <NavLink to="/services" className="px-3 py-2 rounded-lg text-white hover:bg-white/10">Услуги</NavLink>
               <NavLink to="/gallery" className="px-3 py-2 rounded-lg text-white hover:bg-white/10">Галерия</NavLink>
               <NavLink to="/contact" className="px-3 py-2 rounded-lg text-white hover:bg-white/10">Контакти</NavLink>

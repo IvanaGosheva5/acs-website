@@ -8,13 +8,12 @@ import ScrollToTopFloating from "./components/ScrollToTop";
 
 // Pages
 import Home from "./pages/Home";
-import About from "./pages/About";
-import Products from "./pages/Products";
 import Services from "./pages/Services";
 import Gallery from "./pages/Gallery";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import Partners from "./pages/Partners";
+import Colors from "./pages/Colors";
 
 
 // Скрол най-горе при смяна на страница
@@ -33,13 +32,13 @@ function App() {
       <main className="pt-20"> {/* отстояние за fixed Header */}
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/products" element={<Products />} />
           <Route path="/services" element={<Services />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<NotFound />} />
           <Route path="/partners" element={<Partners />} />
+          <Route path="/colors" element={<Colors />} />
+
 
         </Routes>
       </main>

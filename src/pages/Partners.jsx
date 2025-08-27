@@ -57,10 +57,10 @@ const Partners = () => {
       {/* Статистика / доверие */}
       <section className="bg-yellow-50 border-y border-yellow-100">
         <div className="max-w-7xl mx-auto px-6 py-8 grid grid-cols-2 md:grid-cols-4 gap-6">
-          <Stat value="10+" label="години опит" />
+          <Stat value="20+" label="години опит" />
           <Stat value="100+" label="завършени обекта" />
           <Stat value="4" label="международни партньора" />
-          <Stat value="Цяла БГ" label="национално покритие" />
+          <Stat value="В цяла България" label="национално покритие" />
         </div>
       </section>
 
