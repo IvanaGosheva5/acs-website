@@ -7,7 +7,7 @@ import {
   Graticule,
   Marker,
 } from "react-simple-maps";
-import EuropeToBulgaria from "../components/EuropeToBulgaria";
+import EuropeToBulgaria from "../components/EuropeToBulgaria"
 
 
 /**

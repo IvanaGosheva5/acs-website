@@ -1,0 +1,25 @@
+{
+  "type": "Topology",
+  "objects": {
+    "countries": {
+      "type": "GeometryCollection",
+      "geometries": [
+        { "type": "Polygon", "id": "Bulgaria", "properties": { "name": "Bulgaria", "region_un":"Europe" }, "arcs": [[0]] },
+        { "type": "Polygon", "id": "Romania", "properties": { "name": "Romania", "region_un":"Europe" }, "arcs": [[1]] },
+        { "type": "Polygon", "id": "Greece", "properties": { "name": "Greece", "region_un":"Europe" }, "arcs": [[2]] },
+        { "type": "Polygon", "id": "Turkey", "properties": { "name": "Turkey", "region_un":"Europe" }, "arcs": [[3]] },
+        { "type": "Polygon", "id": "Serbia", "properties": { "name": "Serbia", "region_un":"Europe" }, "arcs": [[4]] },
+        { "type": "Polygon", "id": "North Macedonia", "properties": { "name": "North Macedonia", "region_un":"Europe" }, "arcs": [[5]] }
+      ]
+    }
+  },
+  "arcs": [
+    [[24.7,41.2],[27.5,41.2],[27.5,44.2],[22.3,44.2],[22.3,41.2],[24.7,41.2]],
+    [[27.5,43.6],[29.7,43.6],[29.7,48.3],[22.3,48.3],[22.3,44.2],[27.5,44.2]],
+    [[20.0,35.0],[28.5,35.0],[28.5,41.2],[20.0,41.2],[20.0,35.0]],
+    [[26.0,36.0],[36.0,36.0],[36.0,42.5],[26.0,42.5],[26.0,36.0]],
+    [[18.8,42.2],[22.3,42.2],[22.3,46.2],[18.8,46.2],[18.8,42.2]],
+    [[20.4,40.5],[23.0,40.5],[23.0,42.2],[20.4,42.2],[20.4,40.5]]
+  ],
+  "transform": { "scale": [0.5, 0.5], "translate": [0, 0] }
+}
